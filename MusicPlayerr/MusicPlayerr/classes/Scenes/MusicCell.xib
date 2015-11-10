@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E7U-Xg-vWi">
+                        <rect key="frame" x="10" y="10" width="68" height="68"/>
+                        <color key="backgroundColor" red="1" green="0.160982283" blue="0.12492564220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="E7U-Xg-vWi" secondAttribute="height" multiplier="1:1" id="Dex-Cb-LmU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPh-Eo-fZ9">
+                        <rect key="frame" x="98" y="57" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDu-PJ-dsx">
+                        <rect key="frame" x="98" y="10" width="66" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="E7U-Xg-vWi" secondAttribute="bottom" constant="10" id="6oz-FH-T48"/>
+                    <constraint firstItem="ZDu-PJ-dsx" firstAttribute="leading" secondItem="E7U-Xg-vWi" secondAttribute="trailing" constant="20" id="BSd-6R-4NU"/>
+                    <constraint firstItem="cPh-Eo-fZ9" firstAttribute="bottom" secondItem="E7U-Xg-vWi" secondAttribute="bottom" id="Hgu-YQ-FaS"/>
+                    <constraint firstItem="E7U-Xg-vWi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Uxz-9q-HPl"/>
+                    <constraint firstItem="ZDu-PJ-dsx" firstAttribute="top" secondItem="E7U-Xg-vWi" secondAttribute="top" id="kAD-ZU-sdI"/>
+                    <constraint firstItem="cPh-Eo-fZ9" firstAttribute="leading" secondItem="E7U-Xg-vWi" secondAttribute="trailing" constant="20" id="q2h-ab-sWj"/>
+                    <constraint firstItem="E7U-Xg-vWi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sfg-8Q-08y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgVIew" destination="E7U-Xg-vWi" id="1OD-3p-WAa"/>
+                <outlet property="singerLabel" destination="cPh-Eo-fZ9" id="QBx-KD-CXa"/>
+                <outlet property="songLabel" destination="ZDu-PJ-dsx" id="6Np-4G-WUT"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="467.5"/>
+        </tableViewCell>
+    </objects>
+</document>
